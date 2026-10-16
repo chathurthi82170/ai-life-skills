@@ -1,0 +1,313 @@
+/* 🌌 Aurora Mesh Glowing Dark Background */
+.stApp {
+    background: radial-gradient(circle at 10% 10%, #1e1b4b 0%, #0f172a 50%, #064e3b 100%) !important;
+    background-attachment: fixed !important;
+    color: #f8fafc !important;
+}
+
+/* 🌟 Global High-Contrast Text Rules for Headings, Paragraphs & Markdown */
+.stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6 {
+    color: #f8fafc !important;
+}
+
+.stApp p, .stApp label, .stApp span, .stApp li, .stApp div[data-testid="stMarkdownContainer"] * {
+    color: #e2e8f0 !important;
+}
+
+/* ⚠️ Alerts & Banners (st.info, st.success, st.warning, st.error) */
+.stAlert, div[data-baseweb="notification"], div[data-baseweb="notification"] * {
+    color: #ffffff !important;
+    background-color: rgba(30, 41, 59, 0.85) !important;
+    border: 1px solid rgba(56, 189, 248, 0.4) !important;
+}
+
+div[data-baseweb="notification"] p, div[data-baseweb="notification"] span, div[data-baseweb="notification"] div {
+    color: #ffffff !important;
+}
+
+/* 🔘 Radio Buttons & Option Labels */
+div[data-testid="stRadio"] *, div[data-testid="stRadio"] label, div[data-testid="stRadio"] p, div[data-testid="stRadio"] span {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* 💻 Code Snippets & Inline Code Tags (`username`, `dob`, etc.) */
+.stApp code, .stMarkdown code, [data-testid="stMarkdownContainer"] code, p code, li code, div code, span code {
+    background-color: #0f172a !important;
+    color: #38bdf8 !important;
+    border: 1px solid rgba(56, 189, 248, 0.4) !important;
+    font-weight: 700 !important;
+    padding: 3px 8px !important;
+    border-radius: 6px !important;
+    font-size: 0.95rem !important;
+}
+
+/* 🎨 High-Visibility Glassmorphism Sidebar & Navigation Links */
+[data-testid="stSidebar"], section[data-testid="stSidebar"] {
+    background: #0f172a !important;
+    backdrop-filter: blur(20px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-testid="stSidebar"] *, 
+[data-testid="stSidebarNav"] *, 
+[data-testid="stSidebarNavItems"] *,
+[data-testid="stSidebarNavLink"] *,
+section[data-testid="stSidebar"] a,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] div,
+ul[data-testid="stSidebarNavItems"] span {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    font-size: 1.02rem !important;
+}
+
+/* Hover and active states for navigation links */
+[data-testid="stSidebarNavLink"]:hover, 
+[data-testid="stSidebarNavItems"] a:hover,
+section[data-testid="stSidebar"] a:hover {
+    background-color: rgba(99, 102, 241, 0.35) !important;
+    border-radius: 8px !important;
+}
+
+/* Active page link highlighting */
+[aria-current="page"], 
+[aria-current="page"] *,
+[data-testid="stSidebarNavLink"][aria-current="page"] span {
+    color: #38bdf8 !important;
+    font-weight: 800 !important;
+    background-color: rgba(56, 189, 248, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+/* 🚀 Vibrant Gradient Buttons with Glow and Hover Lift */
+.stButton>button {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 10px 24px !important;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.5px !important;
+    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+    box-shadow: 0 8px 30px rgba(236, 72, 153, 0.6) !important;
+    color: #ffffff !important;
+}
+
+/* 💎 Premium Translucent Glass Cards with Hover Animation */
+.kpi-card, .story-card, .emotion-card, .test-card, .routine-card, .step-box, .teacher-card, .admin-card, .feature-box, .login-card { 
+    background: rgba(30, 41, 59, 0.75) !important; 
+    backdrop-filter: blur(16px) saturate(180%) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.12) !important; 
+    border-radius: 20px !important; 
+    padding: 24px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.37), inset 0 1px 0 0 rgba(255, 255, 255, 0.1) !important; 
+    color: #f8fafc !important; 
+    transition: all 0.3s ease !important;
+}
+
+.kpi-card:hover, .story-card:hover, .feature-box:hover {
+    border-color: rgba(168, 85, 247, 0.5) !important;
+    box-shadow: 0 15px 35px 0 rgba(168, 85, 247, 0.25) !important;
+}
+
+/* 🏷️ Glowing Metric Badges */
+.kpi-value {
+    font-size: 2.8rem !important;
+    font-weight: 900 !important;
+    background: -webkit-linear-gradient(45deg, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.kpi-label {
+    font-size: 0.95rem !important;
+    color: #94a3b8 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 🗂️ Modern Pill Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px !important;
+    background-color: rgba(15, 23, 42, 0.6) !important;
+    padding: 6px !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.stTabs [data-baseweb="tab"] { 
+    background-color: transparent !important; 
+    color: #94a3b8 !important;
+    border-radius: 12px !important; 
+    padding: 8px 18px !important;
+    font-weight: 700 !important;
+    border: none !important; 
+    transition: all 0.2s ease !important;
+}
+
+.stTabs [aria-selected="true"] { 
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%) !important; 
+    color: #ffffff !important; 
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* ✨ Hero Header Styling */
+.hero-text { 
+    font-size: 2.6rem !important; 
+    font-weight: 800; 
+    background: -webkit-linear-gradient(45deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    line-height: 1.2; 
+    margin-bottom: 16px; 
+    filter: drop-shadow(0 2px 10px rgba(129, 140, 248, 0.3));
+}
+.sub-hero { 
+    font-size: 1.1rem; 
+    color: #cbd5e1 !important; 
+    margin-bottom: 25px; 
+    line-height: 1.5;
+}
+
+/* Form Inputs, Selectboxes, & Date Input (DOB) */
+.stTextInput label, .stSelectbox label, .stNumberInput label, .stDateInput label, .stTextArea label, [data-testid="stWidgetLabel"] *, [data-testid="stWidgetLabel"] p {
+    color: #ffffff !important;
+    font-size: 1.02rem !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+
+.stTextInput input, .stSelectbox select, .stNumberInput input, .stDateInput input, .stTextArea textarea,
+div[data-baseweb="select"], div[data-baseweb="input"] input {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+/* Fix browser autofill dark box & placeholder color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0f172a inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+::placeholder, input::placeholder, textarea::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.9 !important;
+}
+
+div[data-baseweb="select"] div[role="combobox"], 
+div[data-baseweb="select"] span, 
+div[data-baseweb="select"] p, 
+div[data-baseweb="select"] svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* BaseWeb Popovers, Dropdowns, & Datepicker Calendar */
+div[data-baseweb="popover"], 
+div[data-baseweb="popover"] *, 
+div[data-baseweb="calendar"], 
+div[data-baseweb="menu"], 
+[role="option"], 
+[data-baseweb="datepicker"], 
+ul[role="listbox"], 
+ul[role="listbox"] li {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+}
+
+div[data-baseweb="menu"] *, 
+[role="option"] *, 
+ul[role="listbox"] li * {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* Fix active/hover highlight box in selectboxes */
+[role="option"]:hover, 
+[role="option"]:hover *, 
+[role="option"][aria-selected="true"], 
+[role="option"][aria-selected="true"] *,
+ul[role="listbox"] li:hover,
+ul[role="listbox"] li[aria-selected="true"] {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+/* 💬 Messenger UI Chat Bubbles & Thread Box */
+.chat-container {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.chat-bubble-user {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important;
+    color: #ffffff !important;
+    padding: 14px 20px;
+    border-radius: 18px 18px 4px 18px;
+    margin: 8px 0 8px auto;
+    max-width: 85%;
+    font-size: 1.02rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.chat-bubble-user *, .chat-bubble-user p, .chat-bubble-user div, .chat-bubble-user b, .chat-bubble-user span {
+    color: #ffffff !important;
+}
+
+.chat-bubble-other {
+    background: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding: 14px 20px;
+    border-radius: 18px 18px 18px 4px;
+    margin: 8px auto 8px 0;
+    max-width: 85%;
+    font-size: 1.02rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.chat-bubble-other *, .chat-bubble-other p, .chat-bubble-other div, .chat-bubble-other b, .chat-bubble-other span {
+    color: #ffffff !important;
+}
+
+.chat-meta {
+    font-size: 0.82rem !important;
+    color: #38bdf8 !important;
+    margin-bottom: 6px;
+    font-weight: 700 !important;
+}
+
+/* 📝 Expander & Accordion Styling */
+.stExpander, [data-testid="stExpander"] {
+    background-color: rgba(30, 41, 59, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+}
+
+.stExpander *, [data-testid="stExpander"] * {
+    color: #ffffff !important;
+}
